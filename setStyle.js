@@ -2,9 +2,11 @@
 // @exclude       *
 // @namespace     BigTSDMB
 // @author        BigTSDMB
+// @name          $LIBRARY setStyle
+
 
 // ==UserLibrary==
-// @name          $LIBRARY setStyle
+// @name          setStyle
 // @description   Adds (or modifies) styles of a document. Fully featured replacement for GM_addStyle.
 // @license       MIT
 // @version       1.0
