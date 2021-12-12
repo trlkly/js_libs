@@ -22,8 +22,10 @@ function setStyle(css, attributes) {
     document.documentElement.appendChild(style);
   } else {
     new MutationObserver( (_, observer) => {
-      observer.disconnect();
-      document.documentElement.appendChild(style)
+      if (document.documentElement) {
+        observer.disconnect();
+        document.documentElement.appendChild(style);
+      }
     }).observe(document, { childList: true } );
   }
   if (style.important) { //if important, append style at the end of the document after page loads
