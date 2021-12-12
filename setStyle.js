@@ -2,18 +2,16 @@
 // @exclude       *
 // @namespace     BigTSDMB
 // @author        BigTSDMB
-// @name          $LIBRARY setStyle
-
+// @name          (library) setStyle
 
 // ==UserLibrary==
 // @name          setStyle
 // @description   Adds (or modifies) styles of a document. Fully featured replacement for GM_addStyle.
 // @license       MIT
 // @version       1.0
+// ==/UserLibrary==
 
 // ==/UserScript==
-
-// ==/UserLibrary==
 
 function setStyle(css, attributes) {
   if (typeof attributes == 'string') { attributes = { id: attributes } } //backwards compatibility
