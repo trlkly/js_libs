@@ -14,7 +14,7 @@
 // ==/UserScript==
 
 function setStyle(css, attributes) {
-  if (typeof attributes == 'string') { attributes = { id: attributes } } //backwards compatibility
+  if (typeof attributes != 'object') { attributes = { id: attributes } } //backwards compatibility
   let style = document.getElementById(attributes.id) || document.createElement('style');
   style.textContent = css;
   if (attributes) { Object.assign(style, attributes) }
